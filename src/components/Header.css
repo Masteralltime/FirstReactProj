@@ -7,7 +7,7 @@
     width: 100%;
     display: flex;
     /*align-items: center;*/
-    align-items: flex-end;
+    align-items: flex-start;
     transition: height 0.3s ease-in-out;
     top: 0;
 }
@@ -21,8 +21,8 @@
 }
 
 .header.open {
-    height: 100%;
-    align-items: flex-end;
+    height: calc(10% + 7.5rem);
+    align-items: flex-start;
 }
 
 #headerLogo{
