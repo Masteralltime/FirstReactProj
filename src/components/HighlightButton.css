@@ -23,15 +23,12 @@ button::after {
     left: 0;
     top: 0;
 }
-
 button:hover {
-    transform: scale(0.9) rotate(3deg);
     background: radial-gradient( circle farthest-corner at 10% 20%, #079107 17.8%, #1BFD9C 100.2% );
     transition: 0.5s;
 }
 
 button:active {
-    transform: scale(0.9) rotate(3deg);
     background: radial-gradient( circle farthest-corner at 10% 20%, #079107 17.8%, #1BFD9C 100.2% );
     transition: 0.5s;
 }

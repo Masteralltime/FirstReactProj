@@ -12,9 +12,6 @@ body {
 }
 
 .header{
-    inset: unset;
-    position: sticky;
-    top: 0;
     z-index: 20;
 }
 

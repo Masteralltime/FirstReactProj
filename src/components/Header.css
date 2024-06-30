@@ -1,16 +1,37 @@
-header{
+.header{
+    position: absolute;
     background-color: #151515;
     border-radius: 0 0 1rem 1rem;
     outline: #1BFD9C solid 1px;
     height: 7.5rem;
+    width: 100%;
     display: flex;
+    /*align-items: center;*/
+    align-items: flex-end;
+    transition: height 0.3s ease-in-out;
+    top: 0;
+}
+
+.minorBlock{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
 
+}
 
+.header.open {
+    height: 100%;
+    align-items: flex-end;
 }
 
 #headerLogo{
     width: 5rem;
+    bottom: 0;
+}
+
+.menu{
+    bottom: 0;
 }
 
 #title{
@@ -19,4 +40,5 @@ header{
     font-size: 3rem;
     text-align: left;
     font-family: 'Roboto', sans-serif;
+    bottom: 0;
 }
