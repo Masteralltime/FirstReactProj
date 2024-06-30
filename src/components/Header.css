@@ -1,27 +1,22 @@
 header{
     background-color: #151515;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 1rem 1rem;
     outline: #1BFD9C solid 1px;
-    height: 5%;
+    height: 7.5rem;
     display: flex;
     align-items: center;
 
 
 }
 
-spacer{
-    flex-grow: 1;
-
-}
-
 #headerLogo{
-    width: 5%;
+    width: 5rem;
 }
 
 #title{
     color: white;
     padding-left: 1%;
-    font-size: 2vw;
+    font-size: 3rem;
     text-align: left;
     font-family: 'Roboto', sans-serif;
 }
