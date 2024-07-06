@@ -1,21 +1,17 @@
-import Header from './components/Header.jsx';
-import Wallpaper from "./components/Wallpaper.jsx";
 import './index.css';
-import HighlightButton from "./components/HighlightButton.jsx";
-import Padder from "./components/padder.jsx";
+import {Route, BrowserRouter, Routes} from "react-router-dom";
+import AboutPage from "./AboutPage.jsx";
+import HomePage from "./HomePage.jsx";
 
 function App() {
 
   return (
-      <div className="App">
-          <Header className="header"/>
-          <Wallpaper className="wallpaper"/>
-          <div className="container">
-              <HighlightButton text="Sign Up"/>
-              <Padder/>
-              <HighlightButton text="Log In"/>
-          </div>
-      </div>
+      <BrowserRouter>
+              <Routes>
+                  <Route path={"/"} element={<HomePage />}/>
+                  <Route path="/about" element={<AboutPage />} />
+              </Routes>
+      </BrowserRouter>
   );
 
 }

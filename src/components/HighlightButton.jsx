@@ -18,7 +18,7 @@ function resetTransform(event) {
 function HighlightButton({ text }) {
     return (
         <div>
-            <button className="highlight"
+            <button className="mainButton"
                     onMouseOver={randomRotate}
                     //onMouseDown={randomRotate}
                     onMouseOut={resetTransform}
