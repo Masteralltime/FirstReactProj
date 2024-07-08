@@ -21,30 +21,51 @@ function Header() {
 
     return (
         <header className={`header ${isOpen ? 'open' : ''}`}>
-            <div className="minorBlock">
-                <Padder/>
-                <img src={LogoImg} id="headerLogo" alt="logo"/>
-                <h1 id="title">RaptorHub</h1>
-                <Spacer/>
+
                 { isMobile ? (
                     <>
-                        <Menu className="menu" isOpen={isOpen} toggleMenu={() => {toggleMenu();}}/>
-                        <Padder/>
+                        <div className="minorBlock">
+                            <Padder/>
+                            <img src={LogoImg} id="headerLogo" alt="logo"/>
+                            <h1 id="title">RaptorHub</h1>
+                            <Spacer/>
+                            <Menu className="menu" isOpen={isOpen} toggleMenu={() => {
+                                toggleMenu();
+                            }}/>
+                        </div>
+                        <div className="MobileButtons">
+
+                            <button className="btn" href="/src/assets/CSHS-Logo.png">Home</button>
+
+                            <Padder className="breaker"/>
+
+                            <button className="btn" onClick={goToAboutPage}>About</button>
+
+                            <Padder className="breaker"/>
+
+                            <button className="btn" href="/src/assets/CSHS-Logo.png">Contact</button>
+
+                            <Padder className="breaker"/>
+                        </div>
                     </>
                 ) : (
                     <>
-                        <button className="btn" href="/src/assets/CSHS-Logo.png">Home</button>
+                        <div className="minorBlock">
                         <Padder/>
-                        <button className="btn" onClick={goToAboutPage}>About</button>
-                        <Padder/>
-                        <button className="btn" href="/src/assets/CSHS-Logo.png">Contact</button>
-                        <Padder/>
+                            <img src={LogoImg} id="headerLogo" alt="logo"/>
+                            <h1 id="title">RaptorHub</h1>
+                            <Spacer/>
+                            <button className="btn" href="/src/assets/CSHS-Logo.png">Home</button>
+                            <Padder/>
+                            <button className="btn" onClick={goToAboutPage}>About</button>
+                            <Padder/>
+                            <button className="btn" href="/src/assets/CSHS-Logo.png">Contact</button>
+                            <Padder/>
+                        </div>
                     </>
-                )}
-
-            </div>
-        </header>
-    );
-}
+                    )}
+                    </header>
+                    );
+                }
 
 export default Header;
