@@ -8,15 +8,16 @@ import "./HomePage.css"
 function HomePage() {
 
     return (
-            <div className="App">
-                <Header className="header"/>
-                <Wallpaper className="wallpaper"/>
-                <div className="container">
-                    <HighlightButton text="Sign Up"/>
-                    <Padder/>
-                    <HighlightButton text="Log In"/>
-                </div>
+
+        <div className="App">
+            <Header className="header"/>
+            <Wallpaper className="wallpaper"/>
+            <div className="container">
+                <HighlightButton text="Sign Up"/>
+                <Padder/>
+                <HighlightButton text="Log In"/>
             </div>
+        </div>
     );
 
 }

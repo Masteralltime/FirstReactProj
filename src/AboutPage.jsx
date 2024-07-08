@@ -1,6 +1,5 @@
 // src/components/AboutPage.jsx
 
-import React from 'react';
 
 function AboutPage() {
     return (
