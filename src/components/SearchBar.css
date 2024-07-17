@@ -1,12 +1,23 @@
-.input {
-    margin: 30px;
+.searchBar {
+    visibility: hidden;
+    position: absolute;
+    left: 39vw;
     background: none;
     border: none;
     outline: none;
-    max-width: 190px;
+    width: 20vw;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 9999px;
-    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
-    color: #fff;
+    box-shadow: 0 0 5px var(--ui-main-green);
+    transition: all 0.5s;
+    color: var(--ui-main-white);
+}
+
+.searchBar::placeholder {
+    color: var(--ui-main-white);
+}
+
+.searchBar:hover, .searchBar:focus {
+    box-shadow: 0 0 10px var(--ui-main-green);
 }

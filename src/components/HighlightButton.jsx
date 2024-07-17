@@ -7,7 +7,7 @@ function randomRotate(event) {
         random = Math.random()*20 - 10;
     }
 
-    event.target.style.setProperty('transform', 'scale(0.9) rotate(' + random + 'deg)');
+    event.target.style.setProperty('transform', 'scale(0.9)');// rotate(' + random + 'deg)');
 }
 
 function resetTransform(event) {
@@ -15,16 +15,18 @@ function resetTransform(event) {
 }
 
 // eslint-disable-next-line react/prop-types
-function HighlightButton({ text }) {
+function HighlightButton({ text, clickAction }) {
     return (
         <div>
             <button className="mainButton"
                     onMouseOver={randomRotate}
-                    //onMouseDown={randomRotate}
+                    onMouseDown={randomRotate}
                     onMouseOut={resetTransform}
-                    //onMouseUp={resetTransform}
+                    onMouseUp={resetTransform}
+                    onClick={clickAction}
                 >
-                {text}
+                <span>{text}</span>
+
             </button>
         </div>
     );
