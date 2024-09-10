@@ -1,0 +1,31 @@
+.announcementContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: fixed;
+    left: 22.5%;
+    top: 8rem;
+    width: 72.5vw;
+    height: calc(99% - 8rem);
+    padding: 0 20px;
+    background-color: rgba(25, 25, 25, 0.88);
+    color: white;
+    border-radius: 4rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.announcementText{
+    font-size: 1.1rem;
+    margin: 1rem;
+    text-align: justify;
+}
+
+.titleStickyHeader{
+    position: sticky;
+    margin-left: 2rem;
+    top: 0;
+    background-color: rgba(25, 25, 25, 1);
+    width: 100%;
+}

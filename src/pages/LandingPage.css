@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header{
+    z-index: 20;
+}
+
+.wallpaper{
+    z-index: 0;
+}
+
+HighlightButton {
+    background-color: var(--ui-main-black);
+    z-index: 21;
+}

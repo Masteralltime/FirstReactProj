@@ -13,7 +13,7 @@ function LandingPage() {
     return (
 
         <div className="App">
-            <Header className="header" menu = {false}/>
+            <Header className="header" menu = {true}/>
             <Wallpaper className="wallpaper"/>
             <div className="container">
                 <HighlightButton text="Sign Up" clickAction={() => navigate("/FirstReactProj/Signup")}/>

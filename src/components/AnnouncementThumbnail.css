@@ -1,0 +1,23 @@
+.announcementThumbnail{
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 4%;
+    width: 90%;
+    height: 10vh;
+    background-color: var(--ui-main-grey);
+    border-radius: 1rem;
+    margin: 0.3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.5vh;
+    transition: 0.4s;
+}
+
+.announcementThumbnail:hover{
+    background-color: var(--ui-main-green);
+    color: black;
+    cursor: pointer;
+}

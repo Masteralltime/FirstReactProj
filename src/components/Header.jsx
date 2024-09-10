@@ -15,8 +15,20 @@ function Header({menu}) {
     const navigate = useNavigate();
     const [isOpen, setIsOpen] = useState(false);
 
+    const goToIndexPage = () => {
+        navigate('/FirstReactProj');
+    };
+
     const goToAboutPage = () => {
         navigate('/FirstReactProj/about');
+    };
+
+    const goToHomePage = () => {
+        navigate('/FirstReactProj/home');
+    };
+
+    const goToAttendancePage = () => {
+        navigate('/FirstReactProj/attendance');
     };
 
     const toggleMenu = () => {
@@ -27,11 +39,13 @@ function Header({menu}) {
         return (
             <div className="MobileButtons">
                 <Padder className="breaker"/>
-                <button className="btn" href="/src/assets/CSHS-Logo.png">Home</button>
+                <button className="btn" onClick={goToHomePage}>Home</button>
                 <Padder className="breaker"/>
-                <button className="btn" onClick={goToAboutPage}>About</button>
+                <button className="btn" onClick={goToAttendancePage}>Attendance</button>
                 <Padder className="breaker"/>
-                <button className="btn" href="/src/assets/CSHS-Logo.png">Contact</button>
+                <button className="btn" href="/src/assets/CSHS-Logo.png">Messaging</button>
+                <Padder className="breaker"/>
+                <button className="btn" href="/src/assets/CSHS-Logo.png">Profile</button>
                 <Padder className="breaker"/>
             </div>
         );
@@ -40,11 +54,13 @@ function Header({menu}) {
     const largeMenuBlock = () => {
         return (
             <>
-                <button className="btn" href="/src/assets/CSHS-Logo.png">Home</button>
+                <button className="btn" onClick={goToHomePage}>Home</button>
                 <Padder/>
-                <button className="btn" onClick={goToAboutPage}>About</button>
+                <button className="btn" onClick={goToAttendancePage}>Attendance</button>
                 <Padder/>
-                <button className="btn" href="/src/assets/CSHS-Logo.png">Contact</button>
+                <button className="btn" href="/src/assets/CSHS-Logo.png">Messaging</button>
+                <Padder/>
+                <button className="btn" href="/src/assets/CSHS-Logo.png">Profile</button>
                 <Padder/>
             </>
         );
@@ -53,12 +69,14 @@ function Header({menu}) {
     return (
         <header className={`header ${isOpen ? 'open' : ''}`}>
 
-                { isMobile ? (
+        { isMobile ? (
                     <>
                         <div className="minorBlock">
                             <Padder/>
-                            <a onClick={() => navigate("/FirstReactProj/")}><img src={LogoImg} id="headerLogo" alt="logo"/></a>
-                            <a onClick={() => navigate("/FirstReactProj/")}><h1 id="title">RaptorHub</h1></a>
+                                <button onClick={goToIndexPage}>
+                                    <img src={LogoImg} id="headerLogo" alt="logo"/>
+                                    <h1 id="title">RaptorHub</h1>
+                                </button>
                                 <Spacer/>
                                 {menu &&
                             <Menu className="menu" isOpen={isOpen} toggleMenu={() => {

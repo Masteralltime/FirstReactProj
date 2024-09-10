@@ -1,0 +1,30 @@
+.sidebar{
+    z-index: 5;
+    position: fixed;
+    top: calc(0% + 7.3rem);
+    left: 0;
+    width: 20%;
+    height: calc(100% - 7rem);
+    background-color: rgba(0, 0, 0, 0.77);
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+    overflow-y:auto;
+}
+
+.sidebarTitleContainer{
+    background-color: rgba(25, 25, 25, 0.77);
+    text-align: center;
+    color: white;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    border-radius: 0 0 1rem 1rem;
+    z-index: 6;
+    margin-bottom: 0.3rem;
+}
+
+.sidebarTitle{
+    font-size: 2rem;
+}

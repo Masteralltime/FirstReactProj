@@ -3,7 +3,7 @@ import Header from "../components/Header.jsx";
 import SignupField from "../components/SignupField.jsx";
 
 
-function SigninPage() {
+function SignupPage() {
 
     return (
 
@@ -18,4 +18,4 @@ function SigninPage() {
 
 }
 
-export default SigninPage;
+export default SignupPage;

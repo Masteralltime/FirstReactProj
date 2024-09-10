@@ -8,7 +8,7 @@ html, body {
     --ui-main-black: #1B1B1B;
     --ui-main-white: #fff;
     --ui-main-grey: #1d1d1d;
-    --ui-main-blue: #39dbdb;
+    --ui-main-blue: rgb(57, 219, 219);
     --ui-main-blue-opacity-change: #39dbdba0;
 }
 
@@ -16,3 +16,6 @@ body{
     background-color: var(--ui-main-black);
 }
 
+::-webkit-scrollbar  {
+    width: 0;
+}
